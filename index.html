@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta charset="UTF-8">
+<title>To-Do App</title>
+
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div>
+        <input id="project" placeholder="Project Name">
+        <button id="submitProject">Submit Project Name</button>
+    </div>
+    <div>
+        <input id="title" placeholder="Title">
+        <input id="description" placeholder="Description">
+        <input id="dueDate" placeholder="Due Date" type="date">
+        <select name="priority" id="prioritySelect">
+            <option value="">--Please choose an option--</option>
+            <option value="small">Small</option>
+            <option value="medium">Medium</option>
+            <option value="high">High</option>
+            <option value="important">Important</option>
+        </select>
+        <select id="projectNameSelect">
+            <option value="">--Please choose an option--</option>
+        </select>
+        <input id="id" type="hidden"/>
+        <button id="submit">SUBMIT</button>
+     
+    </div>
+    <div>
+        <label id="projectList"></label>
+        <ul id="list" class="list">
+        </ul>
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>
